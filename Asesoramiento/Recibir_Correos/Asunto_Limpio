@@ -1,0 +1,15 @@
+trim(
+  if(
+    contains(triggerBody()?['subject'], '++'),
+    split(triggerBody()?['subject'], '++')[0],
+    if(
+      contains(triggerBody()?['subject'], '--'),
+      split(triggerBody()?['subject'], '--')[0],
+      if(
+        contains(triggerBody()?['subject'], '//'),
+        split(triggerBody()?['subject'], '//')[0],
+        triggerBody()?['subject']
+      )
+    )
+  )
+)
