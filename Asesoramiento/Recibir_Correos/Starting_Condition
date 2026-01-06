@@ -1,0 +1,4 @@
+#AND
+length(body('Filter_array')) 
+#is greater than
+0
