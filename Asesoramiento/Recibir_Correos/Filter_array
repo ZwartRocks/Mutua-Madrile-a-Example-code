@@ -1,0 +1,4 @@
+#FROM:
+body('Correos_Autorizados')?['value']
+#Filter Query:
+and(equals(item()?['Correo Permitido'], triggerOutputs()?['body/from']),equals(item()?['Activo'], 'Si'))
