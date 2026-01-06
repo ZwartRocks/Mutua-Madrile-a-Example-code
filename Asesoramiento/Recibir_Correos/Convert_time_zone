@@ -1,0 +1,2 @@
+#Base time
+triggerOutputs()?['body/receivedDateTime']
