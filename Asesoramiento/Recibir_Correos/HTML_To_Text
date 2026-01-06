@@ -1,0 +1,2 @@
+if(contains(triggerBody()?['subject'], 'RE:'), 'RE:', if(contains(triggerBody()?['subject'], 'RV:'), 'RV:', '') )
+triggerOutputs()?['body/body']
